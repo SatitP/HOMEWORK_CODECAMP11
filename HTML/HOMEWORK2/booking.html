@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>booking</title>
+    <style>
+        input,label,select {
+            display: block;}
+    </style>
+</head>
+<body>
+
+    <br>
+    <br>
+
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi"
+    METHOD="POST">
+<div>
+    <div style="float:left;margin-left:20px;margin-right:80px">
+        <label for="flyfrom">Flying from</label>
+        <select name="flyfrom" id="flyfrom">
+            <option value="Karachi">Karachi, Pakistan</option>
+            <option value="Bangkok">Bangkok, Thailand</option>
+            <option value="Tokyo">Tokyo, Japan</option>
+        </select>
+    </div>
+    <div style="float: left;">
+        <label for="to">To</label>
+        <select name="to" id="to">
+            <option value="Islamabad">Islamabad, Pakistan</option>
+            <option value="Karachi">Karachi, Pakistan</option>
+            <option value="Bangkok">Bangkok, Thailand</option>
+            <option value="Tokyo">Tokyo, Japan</option>
+        </select>
+    </div>
+    <br style="clear:both;" >
+    <br>
+</div>
+
+<div>
+    <div style="float:left;margin-left:20px;margin-right:65px;" >
+        <label for="depart">Departing</label>
+        <input type="date" id="depart" name="depart" >
+    </div>
+
+    <div style="float:left; >
+        <label for="return">Returning</label>
+        <input type="date" id="return" name="return" >
+    </div>
+    <br style="clear: both;">
+    <br>
+
+
+</div>
+
+<div>
+    <div style="float: left; margin-left: 20px;margin-right: 20px;">
+        <label for="adult">Adult</label>
+        <input type="number" id="adult" name="adult" min="0" max="99" value="1">
+
+    </div>
+    <div style="float: left; margin-right: 20px;">
+        <label for="child">Child</label>
+        <input type="number" id="child" name="child" min="0" max="99" value="0">
+
+    </div>
+    <div style="float: left;margin-right: 20px;">
+        <label for="infant">Infant</label>
+        <input type="number" id="infant" name="infant" min="0" max="99" value="0">
+
+    </div>
+    <div>
+        <label for="currency" style="color: red;">Currency</label>
+        <select name="currency" id="currency">
+            <option value="PKR">PKR</option>
+            <option value="BATH">BATH</option>
+            <option value="USD">USD</option>
+        </select>
+    </div>
+</div>
+    <br>
+    <br>
+    <br>
+    <hr>
+
+    <br>
+    <input type="submit" value="SEARCH" style ="margin-left: 20px;">
+    </form>
+</body>
+</html>
