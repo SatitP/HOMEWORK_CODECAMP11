@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 6.3</title>
+</head>
+<body>
+    <p> 3.ใช้ prompt ในการรับคะแนนมาคำนวณเกรด</p>
+    <P>- ถ้าคะแนน มากกว่าเท่ากับ 80    ได้ A</P>
+    <p>- ถ้าคะแนน อยู่ระหว่าง 70 - 79     ได้ B</p>
+    <p>- ถ้าคะแนน อยู่ระหว่าง 60 - 69     ได้ C</p>
+    <p>- ถ้าคะแนน อยู่ระหว่าง 50 - 59     ได้ D</p>
+    <p>- ถ้าคะแนน น้อยกว่า 50            ได้ F</p>
+
+    <script>
+        let Score = prompt("input คะแนน  :");
+        if(Score >=80){
+            alert("ได้ A");
+        }else if (Score >=70 && Score <=79){
+            alert("ได้ B");
+        }else if (Score >=60 && Score <=69){
+            alert("ได้ C");
+        }else if (Score >=50 && Score <=59){
+            alert("ได้ D");
+        }else if (Score <50){
+            alert("ได้ F");
+        }
+    </script>
+
+</body>
+</html>

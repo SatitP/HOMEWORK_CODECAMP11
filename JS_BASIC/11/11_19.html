@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11.19</title>
+</head>
+<body>
+    <script>
+        let n= +prompt("input n :");
+        
+        function draw(n){
+            let x="";
+   
+           for(let i=n;i>0;i--){
+               for(let j=1;j<n+1;j++){
+                   if (j<i){
+                       x=x+'_';
+                   }else{
+                       x=x+'*';
+                   }
+               }
+              
+               console.log(x);
+               x="";
+           }
+           for(let m=1;m<n;m++){
+               for(let k=1;k<n+1;k++){
+                   if (k>m){
+                       x=x+'*';
+                   }else{
+                       x=x+'_';
+                   }
+               }
+              
+               console.log(x);
+               x="";
+           }
+           console.log("n="+n);
+        }
+        draw(n);
+    </script>
+</body>
+</html>

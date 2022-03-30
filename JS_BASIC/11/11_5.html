@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11.5</title>
+</head>
+<body>
+    <script>
+        let n= +prompt("input n :");
+        
+        function draw(n){
+            let x="";
+            for (let i=n; i> 0; i--){
+          
+                for(let a =1; a<n+1;a++){
+                    x=x+i;
+                }
+                console.log(x);
+                x="";
+            }
+            
+            console.log("n="+n);
+        }
+        draw(n);
+    </script>
+</body>
+</html>
