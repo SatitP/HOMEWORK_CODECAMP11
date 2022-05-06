@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.7.1</title>
+</head>
+<body>
+    <script>
+        let Myobj={};
+        let Mykey;
+        let Myvalue;
+
+        while(true){
+            Mykey = prompt("Enter key: ");
+            if (Mykey === "stop")break;
+            Myvalue= prompt("Value :");
+            if (Myvalue === "stop")break;
+
+            Myobj[Mykey] = Myvalue;
+
+        }
+        console.log(Myobj);
+
+
+        /* เฉลย
+        
+        let obj = {};
+        let key = prompt("Enter key: ");
+        while(key !== "stop") {
+            let value = prompt("Enter value :");
+            obj[key] = value;
+            key = prompt("Enter key: ");
+        }
+        console.log(obj);
+        */
+    </script>
+</body>
+</html>

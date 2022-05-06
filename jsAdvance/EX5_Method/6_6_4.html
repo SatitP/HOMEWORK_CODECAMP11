@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6.6.4</title>
+</head>
+<body>
+    <script>
+        let  ladder = {
+            step: 0,
+            up() {
+                this.step++;
+                // alert("up"+this);
+                return this;
+            },
+            down() {
+                this.step--;
+                // alert("down"+this);
+                return this;
+            },
+            showStep: function() { // shows the current step
+                alert( this.step );
+            }
+        };
+
+        ladder.up().up().down().showStep();
+
+        // ladder.up() return this = obj ladder
+        // แทนค่า กลายเป็น
+        // (ladder).up().down().showStep() เป็นชั้นๆไป
+
+    </script>
+</body>
+</html>

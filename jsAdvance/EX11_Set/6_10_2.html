@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6.10.2</title>
+</head>
+<body>
+    <script>
+        let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
+        function aclean( inarr){
+            let sortarr = inarr.map( x => x.toLowerCase().split('').sort().join(''));
+            let myset = new Set(sortarr);
+          
+            let outarr =[];
+            for (let n of myset){
+                for (let m of inarr){
+                    if(n=== m.toLowerCase().split('').sort().join('')){
+                        outarr.push(m);
+                        break;
+                    }
+
+                }
+            }
+            return outarr;
+        }
+        alert( aclean(arr) ); // "nap,teachers,ear" or "PAN,cheaters,era"
+    </script>
+</body>
+</html>

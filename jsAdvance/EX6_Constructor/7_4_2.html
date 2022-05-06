@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7.4.2</title>
+</head>
+<body>
+    <script>
+       function Accumulators( val ) {
+           this.value = val;
+           this.read = function() {
+               this.value = this.value + Number(prompt("add to value :"));
+           }
+       }
+
+       let myAcc = new Accumulators(3);
+       myAcc.read();
+       alert(myAcc.value);
+
+       myAcc.read();
+       alert(myAcc.value);
+
+        
+    </script>
+</body>
+</html>
